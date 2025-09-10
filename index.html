@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Trabalho de HTML5</h1>
+    </header>
+
+    <main>
+        
+        <p id="introducao">Este é um parágrafo introdutório para o trabalho. Ele utiliza um ID para identificação única.</p>
+
+        <h2>Imagens</h2>
+        <img src="https://via.placeholder.com/150" alt="Imagem de exemplo 1" width="150" height="150">
+        <img src="https://via.placeholder.com/200x100" alt="Imagem de exemplo 2" width="200">
+        <img src="https://via.placeholder.com/250" alt="Imagem de exemplo 3 (tamanho original)">
+
+        <h2>Vídeo</h2>
+        <video controls width="400" poster="https://via.placeholder.com/400x225.png?text=Capa+do+Vídeo">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <p>Se removermos o atributo "controls", o usuário não consegue dar play, pausar ou controlar o volume.</p>
+        
+        <h2>Áudio</h2>
+        <audio controls>
+            <source src="musica.mp3" type="audio/mpeg">
+            <source src="musica.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio.
+        </audio>
+
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Links Diversos</h2>
+        <ul>
+            <li><a href="https://www.google.com">Ir para o Google (texto)</a></li>
+            <li><a href="https://www.google.com" target="_blank">Ir para o Google (nova aba)</a></li>
+            <li>
+                <a href="https://www.google.com">
+                    <img src="https://via.placeholder.com/100x50.png?text=Link+Imagem" alt="Imagem que leva ao Google">
+                </a>
+            </li>
+        </ul>
+
+        <h2>Listas</h2>
+        <h3>Lista Ordenada (passos)</h3>
+        <ol>
+            <li>Passo 1</li>
+            <li>Passo 2</li>
+            <li>Passo 3</li>
+        </ol>
+        <h3>Lista Não Ordenada (itens)</h3>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+
+        <h2>Tabela</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Cabeçalho 1</th>
+                    <th>Cabeçalho 2</th>
+                    <th>Cabeçalho 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dado 1.1</td>
+                    <td>Dado 1.2</td>
+                    <td>Dado 1.3</td>
+                </tr>
+                <tr>
+                    <td>Dado 2.1</td>
+                    <td>Dado 2.2</td>
+                    <td>Dado 2.3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="container-destaque">
+            <h3>Subtítulo Agrupado pela Div</h3>
+            <p class="destaque">Este é o primeiro parágrafo de destaque dentro da div. Ele deve ter um fundo amarelo claro.</p>
+            <p class="destaque">Este é o segundo parágrafo de destaque. A mesma classe CSS se aplica a ele.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Trabalho finalizado. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
